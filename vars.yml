@@ -1,0 +1,7 @@
+---
+admin_username:
+admin_password:
+workspace:
+repo_name:
+permission:
+repo_url: https://api.bitbucket.org/1.0/invitations/{{ workspace }}/{{repo_name}}

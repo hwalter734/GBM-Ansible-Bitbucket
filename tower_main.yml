@@ -1,0 +1,22 @@
+- name: Add users from .txt/.csv file to a Bitbucket repo
+  hosts: localhost
+  tasks:
+    - name: Retrieving users from the provided file...
+      read_csv:
+        delimiter: "{{ delimiter }}"
+        path: "{{ file }}"
+      register: user_data
+
+    - name: Adding users to {{ repo_name }} repo...
+      uri:
+        url: "{{ repo_url }}"
+        method: POST
+        user: "{{ admin_username }}"
+        password: "{{ admin_password }}"
+        body:
+          permission: "{{ permission }}"
+          email: "{{ item.email }}"
+        force_basic_auth: true
+        body_format: json
+      with_items:
+        - "{{ user_data.list }}"
