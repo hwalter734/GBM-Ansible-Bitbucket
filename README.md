@@ -7,8 +7,8 @@ The repository contains the necessary files for automation of addition of users 
 - **Bitbucket repository**: More info on Bitbucket [here](https://bitbucket.org/product).
 - Bitbucket user with administrative access/rights.
 
-# Use with Ansible CLI
+# Usage with Ansible CLI
 Before launching, the playbook, edit the **vars.yml** file with your information as well as the file name which will retrieve the user's information.
 
-# Use with Ansible Tower
+# Usage with Ansible Tower
 Before launching the playbook, add a survey to the job template to include the necessary variables and the users file to launch the template. 
