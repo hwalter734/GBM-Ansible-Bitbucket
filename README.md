@@ -1,5 +1,5 @@
 # GBM-Ansible-Bitbucket
-The repository contains the necessary files for automation of addition of users to a Bitbucket repository. This saves time consuming task of manually adding users. A common use case would be to recollect the users that are going to be added to the Bitbucket repository through a survey/form and save it in a .csv/.txt format. Aftewards you can run the **main.yml** playbook through Ansible and the CLI, or the **tower_main.yml** playbook through Ansible Tower. 
+The repository contains the necessary files for automation of user addition to a Bitbucket repository. This saves time consuming task of manually adding users. A common use case would be to recollect the users that are going to be added to the Bitbucket repository through a survey/form and save it in a .csv/.txt format. Aftewards you can run the **main.yml** playbook through Ansible and the CLI, or the **tower_main.yml** playbook through Ansible Tower. 
 
 # Pre-requisites
 - **Ansible**: More info on installation [here](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html).
